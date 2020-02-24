@@ -20,7 +20,8 @@ matrix2 = [[1.00, 4.00],
 
 print_matrix(matrix)
 print_matrix(matrix2)
-print_matrix(matrix_mult(matrix,matrix2))
+matrix_mult(matrix,matrix2)
+print_matrix(matrix2)
 print_matrix(identi)
 draw_lines( matrix, screen, color )
 display(screen)

@@ -52,7 +52,13 @@ def matrix_mult( m1, m2 ):
         row += 1
 
     #m2 becomes the new matrix
-    return answer
+    row = 0
+    while row < len(m2):
+        col = 0
+        while col < len(m2[row]):
+            m2[row][col] = answer[row][col]
+            col += 1
+        row += 1
 
 
 def dot_product(m1,m2,r,c):

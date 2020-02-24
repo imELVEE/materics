@@ -4,8 +4,11 @@ from matrix import *
 
 screen = new_screen()
 color = [ 0, 255, 0 ]
-matrix = new_matrix()
+matrix = new_matrix(0,0)
 
+add_edge(matrix,20,20,50,20)
+
+'''
 matrix2 = new_matrix()
 
 identi = ident(matrix)
@@ -23,5 +26,7 @@ print_matrix(matrix2)
 matrix_mult(matrix,matrix2)
 print_matrix(matrix2)
 print_matrix(identi)
+'''
+
 draw_lines( matrix, screen, color )
 display(screen)

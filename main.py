@@ -10,8 +10,8 @@ add_edge(matrix,235,200,0,265,200,0)
 add_edge(matrix,225,215,0,235,200,0)
 add_edge(matrix,275,215,0,265,200,0)
 
-add_edge(matrix,220,240,0,225,215,0)
-add_edge(matrix,280,240,0,275,215,0)
+add_edge(matrix,210,260,0,225,215,0)
+add_edge(matrix,290,260,0,275,215,0)
 
 '''
 matrix2 = new_matrix()

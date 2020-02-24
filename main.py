@@ -6,7 +6,7 @@ screen = new_screen()
 color = [ 0, 255, 0 ]
 matrix = new_matrix(0,0)
 
-add_edge(matrix,20,20,50,20)
+add_edge(matrix,20,20,0,50,20,0)
 
 '''
 matrix2 = new_matrix()

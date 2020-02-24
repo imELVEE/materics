@@ -31,37 +31,35 @@ def ident( matrix ):
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
-    row,col = [],[]
     #make answer the correct size
     answer = []
     for r in range(len(m1)):
         answer.append([])
         for c in m2[0]:
             answer[r].append(0)
-    #take the row of m1
-    row = m1[0]
 
-    for r1 in m1:
-        ra = 0
-        for r2 in m2:
-            for col in r2:
-                ca = 0
-                for i in range(len(r1)):
-                    sum = 0
-                    
+#    for row in m1:
+#        for col in m2:
+#            answer[row][col] = dot product
 
-    #take the column of m2
-    for r in m2:
-        col.append(r[0])
-    #dot product
-    sum = 0
-    for i in range(len(row)):
-        sum += row[i]*col[i]
+#do it by index, not with for, so while loop
+    row = 0
+    while row < len(m1):
+        col = 0
+        while col < len(m2[0]):
+            answer[row][col] = dot_product(m1,m2,row,col)
+            col += 1
+        row += 1
 
-    answer[0][0] = sum
     #m2 becomes the new matrix
     return answer
 
+
+def dot_product(m1,m2,r,c):
+    sum = 0
+    for i in range(len(m1)):
+        sum += m1[r][i] * m2[i][c]
+    return sum
 
 
 def new_matrix(rows = 4, cols = 4):

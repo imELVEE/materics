@@ -23,6 +23,9 @@ add_edge(matrix,265,250,0,285,275,0)
 
 add_edge(matrix,250,258,0,235,250,0)
 add_edge(matrix,250,258,0,265,250,0)
+
+add_edge(matrix,235,250,0,225,230,0)
+add_edge(matrix,265,250,0,275,230,0)
 '''
 matrix2 = new_matrix()
 
